@@ -19,23 +19,23 @@ describe('Calculator', () => {
   })
   it('should be able to add numbers', () => {
     const button4 = container.find('#number4');
-    const button1 = container.find('#number1')
-    const addOperator = container.find('#operator_add')
+    const button1 = container.find('#number1');
+    const addOperator = container.find('#operator_add');
     const equalsOperator = container.find('#operator-equals')
     const runningTotal = container.find('#running-total');
     button4.simulate('click');
     addOperator.simulate('click');
     button1.simulate('click');
     equalsOperator.simulate('click');
-    expect(runningTotal.text()).toEqual('5')
+    expect(runningTotal.text()).toEqual('5');
 
   })
 
   it('should be able to subtract numbers', () => {
     const button4 = container.find('#number4');
-    const button7 = container.find('#number7')
-    const subtractOperator = container.find('#operator-subtract')
-    const equalsOperator = container.find('#operator-equals')
+    const button7 = container.find('#number7');
+    const subtractOperator = container.find('#operator-subtract');
+    const equalsOperator = container.find('#operator-equals');
     const runningTotal = container.find('#running-total');
     button7.simulate('click');
     subtractOperator.simulate('click');
@@ -47,9 +47,9 @@ describe('Calculator', () => {
 
   it('should be able to multiply numbers', () => {
     const button3 = container.find('#number3');
-    const button5 = container.find('#number5')
-    const multiplyOperator = container.find('#operator-multiply')
-    const equalsOperator = container.find('#operator-equals')
+    const button5 = container.find('#number5');
+    const multiplyOperator = container.find('#operator-multiply');
+    const equalsOperator = container.find('#operator-equals');
     const runningTotal = container.find('#running-total');
     button3.simulate('click');
     multiplyOperator.simulate('click');
@@ -82,7 +82,7 @@ describe('Calculator', () => {
     button2.simulate('click');
     button1.simulate('click');
     button7.simulate('click');
-    expect(runningTotal.text()).toEqual('217')
+    expect(runningTotal.text()).toEqual('217');
   })
 
   it('should be able to chain multiple operations together', () => {
@@ -99,7 +99,7 @@ describe('Calculator', () => {
     addOperator.simulate('click');
     button1.simulate('click');
     equalsOperator.simulate('click');
-    expect(runningTotal.text()).toEqual('15')
+    expect(runningTotal.text()).toEqual('15');
   })
 
 

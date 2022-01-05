@@ -49,6 +49,10 @@ function App() {
             multiply(runningTotal);
             break;
           case "/":
+            if (runningTotal === 0) {
+              setRunningTotal("Not a number")
+              break
+            }
             divide(runningTotal);
             break;
         }
